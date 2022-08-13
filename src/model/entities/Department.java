@@ -49,7 +49,7 @@ public class Department implements Serializable {
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("id: ").append(id);
-        sb.append("\nDepartment name: ").append(name);
+        sb.append(", name: ").append(name);
         return sb.toString();
     }
 }

@@ -93,11 +93,11 @@ public class Seller implements Serializable {
     public String toString() {
         final StringBuilder sb = new StringBuilder("Seller ");
         sb.append("id: ").append(id);
-        sb.append("\nName: ").append(name);
-        sb.append("\nEmail: ").append(email);
-        sb.append("\nBirthDate: ").append(birthDate);
-        sb.append("\nBaseSalary: ").append(baseSalary);
-        sb.append("\nDepartment ").append(department);
+        sb.append(", name: ").append(name);
+        sb.append(", email: ").append(email);
+        sb.append(", birthDate: ").append(birthDate);
+        sb.append(", baseSalary: ").append(baseSalary);
+        sb.append(", department ").append(department);
         return sb.toString();
     }
 }
