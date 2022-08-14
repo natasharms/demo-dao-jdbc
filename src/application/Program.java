@@ -68,10 +68,16 @@ public class Program {
         /*System.out.println("--------------TEST #4: seller Insert--------------");
         Department newDep = new Department(null, "D3");
         depDao.insert(newDep);
-        System.out.println("Inserted! New id = " + newDep.getId());*/
+        System.out.println("Inserted! New id = " + newDep.getId());
 
+        System.out.println();
+         */
 
-
+        /*System.out.println("--------------TEST #5: department Update--------------");
+        dep = depDao.findById(6);
+        dep.setName("Music");
+        depDao.update(dep);
+        System.out.println("Update completed!");*/
 
         sc.close();
 
