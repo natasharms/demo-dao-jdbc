@@ -62,7 +62,7 @@ public class Program {
             System.out.println(obj);
         }
 
-        System.out.println("\n--------------TEST #4: seller Insert--------------");
+        System.out.println("\n--------------TEST #4: department Insert--------------");
         Department newDep = new Department(null, "D3");
         depDao.insert(newDep);
         System.out.println("Inserted! New id = " + newDep.getId());
