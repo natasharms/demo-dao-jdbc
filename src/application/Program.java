@@ -55,6 +55,16 @@ public class Program {
         System.out.println("--------------TEST #1: department findById--------------");
         System.out.println(dep);
 
+        System.out.println();
+
+        System.out.println("--------------TEST #2: department findAll--------------");
+        List<Department> list = depDao.findAll();
+        for (Department obj : list){
+            System.out.println(obj);
+        }
+
+
+
 
         sc.close();
 
