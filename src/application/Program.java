@@ -15,7 +15,7 @@ public class Program {
 
         Scanner sc = new Scanner(System.in);
 
-        /*SellerDao sellerDao = DaoFactory.createSellerDao();
+        SellerDao sellerDao = DaoFactory.createSellerDao();
         Seller seller = sellerDao.findById(3);
         System.out.println("--------------TEST #1: seller findById--------------");
         System.out.println(seller);
@@ -48,36 +48,38 @@ public class Program {
         System.out.println("Enter ID: ");
         int id = sc.nextInt();
         sellerDao.deleteById(id);
-        System.out.println("Delete complete");*/
+        System.out.println("Delete complete");
 
         DepartmentDao depDao = DaoFactory.createDepartmentDao();
         Department dep = depDao.findById(2);
-        System.out.println("--------------TEST #1: department findById--------------");
+        System.out.println("\n--------------TEST #1: department findById--------------");
         System.out.println(dep);
 
-        System.out.println();
 
-        System.out.println("--------------TEST #2: department findAll--------------");
-        List<Department> list = depDao.findAll();
-        for (Department obj : list){
+        System.out.println("\n--------------TEST #2: department findAll--------------");
+        List<Department> listDep = depDao.findAll();
+        for (Department obj : listDep){
             System.out.println(obj);
         }
 
-        System.out.println();
-
-        /*System.out.println("--------------TEST #4: seller Insert--------------");
+        System.out.println("\n--------------TEST #4: seller Insert--------------");
         Department newDep = new Department(null, "D3");
         depDao.insert(newDep);
         System.out.println("Inserted! New id = " + newDep.getId());
 
-        System.out.println();
-         */
 
-        /*System.out.println("--------------TEST #5: department Update--------------");
+        System.out.println("\n--------------TEST #5: department Update--------------");
         dep = depDao.findById(6);
         dep.setName("Music");
         depDao.update(dep);
-        System.out.println("Update completed!");*/
+        System.out.println("Update completed!");
+
+
+        System.out.println("\n--------------TEST #5: department Delete--------------");
+        System.out.println("Enter ID: ");
+        int idDep = sc.nextInt();
+        depDao.deleteById(idDep);
+        System.out.println("Delete complete");
 
         sc.close();
 
