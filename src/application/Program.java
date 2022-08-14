@@ -1,6 +1,7 @@
 package application;
 
 import model.dao.DaoFactory;
+import model.dao.DepartmentDao;
 import model.dao.SellerDao;
 import model.entities.Department;
 import model.entities.Seller;
@@ -14,7 +15,7 @@ public class Program {
 
         Scanner sc = new Scanner(System.in);
 
-        SellerDao sellerDao = DaoFactory.createSellerDao();
+        /*SellerDao sellerDao = DaoFactory.createSellerDao();
         Seller seller = sellerDao.findById(3);
         System.out.println("--------------TEST #1: seller findById--------------");
         System.out.println(seller);
@@ -47,7 +48,13 @@ public class Program {
         System.out.println("Enter ID: ");
         int id = sc.nextInt();
         sellerDao.deleteById(id);
-        System.out.println("Delete complete");
+        System.out.println("Delete complete");*/
+
+        DepartmentDao depDao = DaoFactory.createDepartmentDao();
+        Department dep = depDao.findById(2);
+        System.out.println("--------------TEST #1: department findById--------------");
+        System.out.println(dep);
+
 
         sc.close();
 
