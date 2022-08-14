@@ -15,6 +15,8 @@ public class Program {
 
         Scanner sc = new Scanner(System.in);
 
+        /////////////////////////////////////////// SELLER TESTS
+
         SellerDao sellerDao = DaoFactory.createSellerDao();
         Seller seller = sellerDao.findById(3);
         System.out.println("--------------TEST #1: seller findById--------------");
@@ -49,6 +51,8 @@ public class Program {
         int id = sc.nextInt();
         sellerDao.deleteById(id);
         System.out.println("Delete complete");
+
+        /////////////////////////////////////////// DEPARTMENT TESTS
 
         DepartmentDao depDao = DaoFactory.createDepartmentDao();
         Department dep = depDao.findById(2);
